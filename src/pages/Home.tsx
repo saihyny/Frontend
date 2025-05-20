@@ -20,7 +20,7 @@ const Home = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 gap-6 cursor-pointer">
+        <div className="grid grid-cols-1 gap-6">
           <MediaUpload type="image" />
           <MediaUpload type="video" />
         </div>

@@ -10,9 +10,8 @@ import Processing from "./pages/Processing";
 import Success from "./pages/Success";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import CleanDownload from "./pages/CleanDownload";
 import { MediaProvider } from "./context/MediaContext";
-import AiUsernameRemover from "./pages/AiUsernameRemover";
-import VideoDownloader from "./pages/VideoDownloader";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +28,7 @@ const App = () => (
             <Route path="/processing" element={<Processing />} />
             <Route path="/success" element={<Success />} />
             <Route path="/settings" element={<Settings />} />
-            <Route path="/ai-username-remover" element={<AiUsernameRemover />} />
+            <Route path="/clean-download" element={<CleanDownload />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

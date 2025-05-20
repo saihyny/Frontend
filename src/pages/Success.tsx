@@ -29,16 +29,16 @@ const Success = () => {
   const handleSaveToGallery = () => {
     // In a real app, this would save the media to the device gallery
     // For demo purposes, we'll just show a toast
-    toast.success("Media player on Devlopment", {
-      description: "click on the download button to save the media to your device."
+    toast.success("Media saved to gallery", {
+      description: "Your processed media has been saved to your gallery."
     });
   };
 
   const handleShare = () => {
     // In a real app, this would use the native sharing functionality
     // For demo purposes, we'll just show a toast
-    toast.success("Shere option on Devlopement", {
-      description: "click on the download button to save the media to your device."
+    toast.success("Ready to share", {
+      description: "Your media is ready to be shared on WhatsApp or other apps."
     });
   };
 
@@ -68,10 +68,10 @@ const Success = () => {
         </div>
         
         <div className="flex flex-col gap-3 mb-8">
-          <ActionButton onClick={handleSaveToGallery}>
+          <ActionButton onClick={handlePlayMedia}>
             Play {mediaType === "image" ? "Photo" : "Video"}
           </ActionButton>
-          <ActionButton   onClick={handlePlayMedia} variant="secondary" icon={<Image size={18} />}>
+          <ActionButton onClick={handleSaveToGallery} variant="secondary" icon={<Image size={18} />}>
             Save to Gallery
           </ActionButton>
           <ActionButton onClick={handleShare} variant="secondary" icon={<Share size={18} />}>

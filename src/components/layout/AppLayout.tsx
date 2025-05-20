@@ -1,3 +1,4 @@
+
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
@@ -7,9 +8,8 @@ interface AppLayoutProps {
   className?: string;
 }
 const navLinks = [
-  { path: "/", label: "StatusShield" },
-  { path: "/ai-username-remover", label: "AI Username Remover" },
-  { path: "/video-downloader", label: "Video Downloader" },
+  { path: "/", label: "Status Shield" },
+  { path: "/clean-download", label: "Clean Download" },
 ];
 const AppLayout = ({ children, className }: AppLayoutProps) => {
   const location = useLocation();
@@ -30,7 +30,7 @@ const AppLayout = ({ children, className }: AppLayoutProps) => {
               className={cn(
                 "flex-1 text-center py-2 rounded-md transition-colors",
                 location.pathname === link.path
-                  ? "bg-statusshield-purple text-white"
+                  ? "bg-statusshield-purple text-black"
                   : "text-gray-600 hover:bg-gray-100"
               )}
             >
