@@ -30,7 +30,6 @@ const App = () => (
             <Route path="/success" element={<Success />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/ai-username-remover" element={<AiUsernameRemover />} />
-            <Route path="/video-downloader" element={<VideoDownloader />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
